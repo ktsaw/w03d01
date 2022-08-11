@@ -69,6 +69,7 @@ buyHamster(hamster){
 }
 }
 
+//Creating Timmy's story
 //1.Instantiate a new Person named Timmy
 const tim = new Person('Timmy'); 
 
@@ -137,22 +138,23 @@ tim.exercise();
 tim.exercise();
 console.log(tim)
 
-// Chef make dinners
+// Chef make dinners - chef is a factory of dinner
 
-// class Dinner {
-//     constructor(appetizer, entree, dessert){
-//         this.appetizer = appetizer;
-//         this.entree = entree;
-//         this.dessert = dessert;
-//     }
-//     cook () {
-//         console.log('chop chop')
-//     }
-// }
-
-// const myDinner = new Dinner('salad', 'shrimp fried rice', 'strawberry ice cream')
-
-// console.log(myDinner)
+const dinnerFactory = (appetizer, entree, dessert) => {
+    return {
+        appetizer: appetizer,
+        entree: entree,
+        dessert: dessert,
+        cook() {
+            console.log(appetizer, entree, dessert );
+        }
+    };
+        
+    };
+                 
+const chef =  dinnerFactory('satay', 'shrimp fried rice', 'strawberry ice cream');
+console.log(chef)                                                                       
+chef.cook(); 
 
 // class Chef {
 //     constructor(restaurant){
@@ -164,7 +166,7 @@ console.log(tim)
 //         this.dinners.push(newDinner);
 //     }
 // }
-// const appetizer = new Chef('salad');
+// const appetizer = new Chef('satay');
 
 // appetizer.cookDinner();
 // console.log(appetizer)
