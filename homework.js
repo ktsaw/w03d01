@@ -145,16 +145,17 @@ const dinnerFactory = (appetizer, entree, dessert) => {
         appetizer: appetizer,
         entree: entree,
         dessert: dessert,
-        cook() {
-            console.log(appetizer, entree, dessert );
+        //cook() {
+            //console.log(appetizer, entree, dessert );
         }
     };
         
-    };
+    //};
                  
 const chef =  dinnerFactory('satay', 'shrimp fried rice', 'strawberry ice cream');
 console.log(chef)                                                                       
-chef.cook(); 
+//chef.cook(); 
+
 
 // class Chef {
 //     constructor(restaurant){
