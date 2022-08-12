@@ -160,11 +160,11 @@ class Chef {
     }
 }
 
-const tom = new Chef ('tom')
-console.log(tom)
+const dew = new Chef ('dew')
+console.log(dew)
 
-tom.makeDinner('salad', 'steak', 'ice cream')
-console.log(tom)
+dew.makeDinner('chicken satay', 'green curry and rice', 'vanilla ice cream')
+console.log(dew)
 
 
 
