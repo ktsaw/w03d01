@@ -140,37 +140,50 @@ console.log(tim)
 
 // Chef make dinners - chef is a factory of dinner
 
-const dinnerFactory = (appetizer, entree, dessert) => {
-    return {
-        appetizer: appetizer,
-        entree: entree,
-        dessert: dessert,
-        //cook() {
-            //console.log(appetizer, entree, dessert );
-        }
-    };
+class Dinner {
+    constructor (appetizer, entree, dessert) {
+        this.appetizer = appetizer;
+        this.entree = entree;
+        this.dessert = dessert;
+    }
+}
+
+
+class Chef {
+    constructor (name) {
+        this.name = name;
+        this.dinners = [];
+    }
+    makeDinner(appetizer, entree, dessert){
+        const newDinner = new Dinner (appetizer, entree, dessert)
+        this.dinners.push(newDinner)
+    }
+}
+
+const tom = new Chef ('tom')
+console.log(tom)
+
+tom.makeDinner('salad', 'steak', 'ice cream')
+console.log(tom)
+
+
+
+
+// const dinnerFactory = (appetizer, entree, dessert) => {
+//     return {
+//         appetizer: appetizer,
+//         entree: entree,
+//         dessert: dessert,
+//         cook() {
+//             console.log(`Your appetizer is chicken ${appetizer}, entree is ${entree}, and dessert is ${dessert}.` );
+//         }
+//     };
         
-    //};
+//     };
                  
-const chef =  dinnerFactory('satay', 'shrimp fried rice', 'strawberry ice cream');
-console.log(chef)                                                                       
-//chef.cook(); 
-
-
-// class Chef {
-//     constructor(restaurant){
-//         this.restaurant = restaurant;
-//         this.dinners = [];
-//     }
-//     cookDinner() {
-//         const newDinner = new Dinner(this.restaurant, this.dinners.length);
-//         this.dinners.push(newDinner);
-//     }
-// }
-// const appetizer = new Chef('satay');
-
-// appetizer.cookDinner();
-// console.log(appetizer)
+// const chef =  dinnerFactory('satay', 'shrimp fried rice', 'strawberry ice cream');
+// console.log(chef)                                                                       
+// chef.cook(); 
 
 
 
