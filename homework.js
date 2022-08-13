@@ -19,7 +19,7 @@ getPrice(hamster){
 }
 }
 class Person  {
-    constructor(name, age, height, weight, mood, hamsters, bankAccount){
+    constructor(name){
 ;
         this.name = name;
         this.age = 0;
@@ -35,11 +35,11 @@ getName(){
     return this.name;
 }
 getAge(){
-    console.log(`{this.age}`)
+    console.log(`${this.age}`)
     return this.age;
 }
 getWeight(){
-    console.log(`{this.weight}`)
+    console.log(`${this.weight}`)
     return this.weight;
 }
 greet (){
