@@ -70,40 +70,36 @@ buyHamster(hamster){
 }
 
 //Creating Timmy's story
-//1.Instantiate a new Person named Timmy
-const tim = new Person('Timmy'); 
 
-//2. Age Timmy 5 years
-for (let i = 1; i <= 5; i++){
+const tim = new Person('Timmy');   //1.Instantiate a new Person named Timmy
+
+for (let i = 1; i <= 5; i++){     //2. Age Timmy 5 years
     tim.ageUP();
-    console.log(tim)
+    
 }
 
 console.log(tim)
-//3. Have him eat 5 times
-tim.eat();
+
+tim.eat();                          //3. Have him eat 5 times
 tim.eat();
 tim.eat();
 tim.eat();
 tim.eat();
 console.log(tim)
 
-//4.  Have him exercise 5 times
-tim.exercise();
+tim.exercise();                     //4.  Have him exercise 5 times
 tim.exercise();
 tim.exercise();
 tim.exercise();
 tim.exercise();
 console.log(tim);
 
-//5. Age Timmy 9 years
-
-for (let i = 6; i <= 9; i++){
+for (let i = 6; i <= 9; i++){       //5. age Timmy 9 years
     tim.ageUP();
     console.log(tim)
 }
-//6.  Create a hampster names "Gus"
-const Gus = new Hamster('Timmy', 'Gus');
+
+const Gus = new Hamster('Tommy', 'Gus')  //6. create a hamster names "Gus"
 console.log(Gus.price)
 console.log(Gus.owner)
 console.log(Gus.name)
@@ -112,33 +108,27 @@ Gus.eatFood()
 Gus.getPrice()
 
 
-//7.  Set Gus's owner to the string "Timmy"
-// see #6 above.
+Gus.owner = 'Timmy'                 //7.  Set Gus's owner to the string "Timmy"
 
-//8. have Timmy 'buy' Gus
-
-tim.buyHamster(Gus)
+tim.buyHamster(Gus)                 //8. have Timmy 'buy' Gus
 console.log(tim)
 
 
-//9.  Age Timmy 15 years
-
-for (i = 10; i <=15; i++){
+for (i = 10; i <=15; i++){          //9.  Age Timmy 15 years
     tim.ageUP();
     console.log(tim);
 }
 
-//10. Have Timmy eat twice
-tim.eat();
+tim.eat();                          //10. Have Timmy eat twice
 tim.eat();
 console.log(tim)
 
-//11. Have Timmy exercise twice
-tim.exercise();
+
+tim.exercise();                     //11. Have Timmy exercise twice
 tim.exercise();
 console.log(tim)
 
-// Chef make dinners - chef is a factory of dinner
+// Chef make dinners - chef should be a factory of dinner
 
 class Dinner {
     constructor (appetizer, entree, dessert) {
@@ -160,7 +150,7 @@ class Chef {
     }
 }
 
-const dew = new Chef ('Dew')
+const dew = new Chef ('Dew')        //Instantiate a new Chef named Dew
 console.log(dew)
 
 dew.makeDinner('chicken satay', 'green curry and rice', 'vanilla ice cream')
