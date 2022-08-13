@@ -144,7 +144,7 @@ class Chef {
         this.name = name;
         this.dinners = [];
     }
-    makeDinner(appetizer, entree, dessert){
+    makeDinner(appetizer, entree, dessert){         //A method that takes 3 arguments
         const newDinner = new Dinner (appetizer, entree, dessert)
         this.dinners.push(newDinner)
     }
@@ -153,9 +153,9 @@ class Chef {
 const dew = new Chef ('Dew')        //Instantiate a new Chef named Dew
 console.log(dew)
 
-dew.makeDinner('chicken satay', 'green curry and rice', 'vanilla ice cream')
+
+dew.makeDinner('Chicken Satay', 'Green Curry and Rice', 'Vanilla Ice Cream') //the Chef create 3 dinners
+dew.makeDinner('Salad', 'Beef Stroganoff', 'Cheesecake') 
+dew.makeDinner('House Salad', 'Grilled Salmon', 'Tiramisu') 
 console.log(dew)
-
-
-
 
