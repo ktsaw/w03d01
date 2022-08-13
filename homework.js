@@ -1,5 +1,5 @@
 class Hamster {
-    constructor(owner, name, price){
+    constructor(owner, name){
         this.owner = owner;
         this.name = name;
         this.price = 15;
