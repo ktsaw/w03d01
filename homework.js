@@ -160,30 +160,12 @@ class Chef {
     }
 }
 
-const dew = new Chef ('dew')
+const dew = new Chef ('Dew')
 console.log(dew)
 
 dew.makeDinner('chicken satay', 'green curry and rice', 'vanilla ice cream')
 console.log(dew)
 
-
-
-
-// const dinnerFactory = (appetizer, entree, dessert) => {
-//     return {
-//         appetizer: appetizer,
-//         entree: entree,
-//         dessert: dessert,
-//         cook() {
-//             console.log(`Your appetizer is chicken ${appetizer}, entree is ${entree}, and dessert is ${dessert}.` );
-//         }
-//     };
-        
-//     };
-                 
-// const chef =  dinnerFactory('satay', 'shrimp fried rice', 'strawberry ice cream');
-// console.log(chef)                                                                       
-// chef.cook(); 
 
 
 
